@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Experience from "./pages/Experience";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
+import WhyMe from "./pages/WhyMe";
 import Contact from "./pages/Contact";
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
+          <Route path="/why-me" element={<WhyMe />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

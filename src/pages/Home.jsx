@@ -10,7 +10,7 @@ const highlights = [
   { value: "5", suffix: "+", label: "Years of Experience" },
   { value: "$34", suffix: "M", label: "Revenue Generated" },
   { value: "94", suffix: "%", label: "Cost Reduction" },
-  { value: "1000", suffix: "+", label: "Team Size Led" },
+  { value: "1000", suffix: "+", label: "Organization Size Led" },
 ];
 
 export default function Home() {

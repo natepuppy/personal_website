@@ -14,6 +14,8 @@ const jobs = [
       "Launched 3 new enterprise applications from scratch, defining technical strategy, system design, and implementation standards in React, React Native, Angular, PHP, and Ruby on Rails stacks.",
       "Strategized with C-suite and company leadership to align engineering roadmaps and initiatives.",
       "Led cross-functional engineering teams to develop and scale mission-critical applications, design real-time analytics and BI dashboards, and drive technical excellence through mentorship, code reviews, and scalable architecture.",
+      "Promoted from Lead Engineer to Manager to Director within a single year.",
+      "Completely overhauled all company software systems, replacing legacy tools with modern, maintainable platforms.",
     ],
   },
   {
@@ -133,7 +135,7 @@ export default function Experience() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="grid sm:grid-cols-3 gap-5"
+            className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5"
           >
             {[
               {
@@ -144,12 +146,17 @@ export default function Experience() {
               {
                 icon: "🌍",
                 title: "Humanitarian Service",
-                desc: "Completed two years of humanitarian service in a developing country.",
+                desc: "Served a two-year mission in the Philippines. Became fluent in Tagalog.",
               },
               {
                 icon: "💰",
                 title: "Door-to-Door Sales",
                 desc: "Generated over $250,000 in revenue in just four months through direct sales.",
+              },
+              {
+                icon: "🤖",
+                title: "Bot Detection Bypass",
+                desc: "Built software to successfully bypass bot detection on all major social media platforms.",
               },
             ].map((item) => (
               <GlowCard key={item.title} className="p-5">

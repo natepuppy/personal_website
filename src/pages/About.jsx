@@ -30,6 +30,12 @@ export default function About() {
                 ship, and use data to drive real business outcomes.
               </p>
               <p>
+                Before my career in tech, I spent two years living in the
+                Philippines on a humanitarian mission, where I became fluent in
+                Tagalog. That experience shaped how I communicate, lead, and
+                approach unfamiliar problems.
+              </p>
+              <p>
                 My career has spanned machine learning research, full-stack
                 engineering, backend data systems, and executive engineering
                 leadership — giving me a rare combination of deep technical
@@ -86,6 +92,23 @@ export default function About() {
                 </span>
                 <span className="px-3 py-1.5 rounded-full bg-accent/10 text-accent-light text-xs font-medium">
                   ML Research
+                </span>
+              </div>
+            </GlowCard>
+
+            <GlowCard className="p-6 sm:p-8 mt-5">
+              <h3 className="text-lg font-bold text-white mb-2">
+                Pre-College
+              </h3>
+              <div className="flex flex-wrap gap-3">
+                <span className="px-3 py-1.5 rounded-full bg-accent/10 text-accent-light text-xs font-medium">
+                  4.0 GPA — Middle School
+                </span>
+                <span className="px-3 py-1.5 rounded-full bg-accent/10 text-accent-light text-xs font-medium">
+                  4.0 GPA — High School
+                </span>
+                <span className="px-3 py-1.5 rounded-full bg-accent/10 text-accent-light text-xs font-medium">
+                  Math Student of the Year
                 </span>
               </div>
             </GlowCard>
