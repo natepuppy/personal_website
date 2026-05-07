@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Skills from "./pages/Skills";
 import WhyMe from "./pages/WhyMe";
 import Contact from "./pages/Contact";
+import Research from "./pages/Research";
 
 export default function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ export default function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/why-me" element={<WhyMe />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/research" element={<Research />} />
         </Routes>
       </main>
       <Footer />

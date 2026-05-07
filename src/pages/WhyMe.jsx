@@ -29,11 +29,12 @@ const journey = [
     icon: "🚀",
     milestones: [
       "Architected a feature that increased YOY revenue by $34 million at a large tech company",
-      "Directed all software engineering at a company with 1,000+ employees",
-      "Reduced an app's development costs from $840K/year to $50K — a 94% reduction",
-      "Promoted from Lead Engineer to Manager to Director in a single year",
+      "Assumed technical oversight for a 1,000+ person company's entire engineering strategy",
+      "Reduced overall development costs from $1.06M/year to $584K/year — 45% savings",
+      "Reduced a single app's development costs from $840K/year to $50K — a 94% reduction",
+      "Accelerated from Engineer to Staff Software Engineer in 1.5 years",
       "Architected multiple new enterprise applications end-to-end",
-      "Completely overhauled all the software at the company",
+      "Published three independent research papers on ad-tech causal inference",
     ],
   },
 ];

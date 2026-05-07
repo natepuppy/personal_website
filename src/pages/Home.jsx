@@ -9,8 +9,8 @@ import profileImg from "../assets/profile.png";
 const highlights = [
   { value: "5", suffix: "+", label: "Years of Experience" },
   { value: "$34", suffix: "M", label: "Revenue Generated" },
-  { value: "94", suffix: "%", label: "Cost Reduction" },
-  { value: "1000", suffix: "+", label: "Organization Size Led" },
+  { value: "94", suffix: "%", label: "Single-App Cost Reduction" },
+  { value: "45", suffix: "%", label: "Overall Cost Reduction" },
 ];
 
 export default function Home() {
@@ -42,7 +42,7 @@ export default function Home() {
         <div className="relative max-w-6xl mx-auto w-full grid md:grid-cols-5 gap-12 lg:gap-20 items-center">
           <div className="md:col-span-3 order-2 md:order-1 animate-slide-up">
             <p className="text-accent-light text-xs font-semibold tracking-[0.2em] uppercase mb-5">
-              Software Engineer
+              Staff Software Engineer
             </p>
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight leading-[1.05] mb-6">
               <span className="gradient-text">Nathan</span>
@@ -50,7 +50,7 @@ export default function Home() {
               <span className="gradient-text">Clark</span>
             </h1>
             <p className="text-base sm:text-lg text-neutral-400 leading-relaxed max-w-lg mb-10">
-              Director of Engineering building scalable systems and leading
+              Staff Software Engineer building scalable systems and leading
               high-impact teams. Passionate about turning data into products
               that drive real business value.
             </p>
@@ -146,6 +146,82 @@ export default function Home() {
               Learn more about me &rarr;
             </Link>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Research teaser */}
+      <section className="py-16 px-6 sm:px-10 lg:px-20 border-t border-white/5">
+        <div className="max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8"
+          >
+            <div>
+              <p className="text-accent-light text-xs font-semibold tracking-[0.2em] uppercase mb-1">
+                Independent Research
+              </p>
+              <h2 className="text-xl sm:text-2xl font-bold text-white">
+                Working Papers
+              </h2>
+            </div>
+            <Link
+              to="/research"
+              className="text-xs font-semibold text-neutral-400 hover:text-white transition-colors whitespace-nowrap"
+            >
+              View all research &rarr;
+            </Link>
+          </motion.div>
+
+          <div className="grid sm:grid-cols-3 gap-4">
+            {[
+              {
+                num: "01",
+                title: "Benchmarking Uplift Models Under Realistic Confounding",
+                status: "live",
+              },
+              {
+                num: "02",
+                title: "Sure-Thing Penalized Uplift: What Works and What Doesn't",
+                status: "soon",
+              },
+              {
+                num: "03",
+                title: "Neural SDE Fatigue Modeling for Multi-Channel Ad Campaigns",
+                status: "soon",
+              },
+            ].map((p, i) => (
+              <motion.div
+                key={p.num}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+              >
+                <Link to="/research" className="block h-full group">
+                  <div className="h-full p-5 rounded-xl border border-white/10 bg-white/[0.02] hover:border-white/20 hover:bg-white/[0.04] transition-all">
+                    <div className="flex items-center justify-between mb-3">
+                      <span className="text-2xl font-black text-white/10">{p.num}</span>
+                      {p.status === "live" ? (
+                        <span className="text-[10px] font-bold tracking-widest uppercase text-emerald-400">
+                          Live
+                        </span>
+                      ) : (
+                        <span className="text-[10px] font-bold tracking-widest uppercase text-neutral-600">
+                          Soon
+                        </span>
+                      )}
+                    </div>
+                    <p className="text-sm text-neutral-300 leading-snug font-medium group-hover:text-white transition-colors">
+                      {p.title}
+                    </p>
+                  </div>
+                </Link>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
     </PageTransition>

@@ -37,9 +37,9 @@ export default function About() {
               </p>
               <p>
                 My career has spanned machine learning research, full-stack
-                engineering, backend data systems, and executive engineering
-                leadership — giving me a rare combination of deep technical
-                ability and strategic vision.
+                engineering, backend data systems, and senior technical
+                ownership — giving me a rare combination of deep technical
+                ability and cross-functional impact.
               </p>
               <p>
                 I'm driven by the belief that great engineering isn't just about
@@ -142,7 +142,7 @@ export default function About() {
               {
                 icon: "📈",
                 title: "Continuous Growth",
-                text: "From door-to-door sales to ML research to directing engineering — I'm always learning, always pushing into new territory, always getting better.",
+                text: "From door-to-door sales to ML research to published independent research papers — I'm always learning, always pushing into new territory, always getting better.",
               },
             ].map((item, i) => (
               <motion.div

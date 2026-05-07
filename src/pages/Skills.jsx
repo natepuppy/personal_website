@@ -18,13 +18,13 @@ const categories = [
     title: "Data & ML",
     skills: [
       "PyTorch", "Machine Learning", "BigQuery", "Snowflake",
-      "ETL Pipelines", "Data Analysis", "PostgreSQL", "MySQL",
+      "ETL Pipelines", "Apache Airflow", "Data Analysis", "PostgreSQL", "MySQL",
     ],
   },
   {
     title: "Infrastructure & DevOps",
     skills: [
-      "AWS", "GCP", "Terraform", "Docker", "CI/CD",
+      "AWS", "GCP", "AWS SQS", "Terraform", "Docker", "CI/CD",
       "Microservices Architecture", "Git", "GitHub",
     ],
   },
@@ -37,7 +37,7 @@ const categories = [
   },
   {
     title: "Other",
-    skills: ["Bilingual", "Public Speaking", "Technical Writing", "System Design"],
+    skills: ["Bilingual (Tagalog)", "Public Speaking", "Technical Writing", "System Design"],
   },
 ];
 
